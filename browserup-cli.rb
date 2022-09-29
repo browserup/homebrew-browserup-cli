@@ -17,8 +17,6 @@ class BrowserupCli < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     bin.install "browserup"
-    prefix.install "README.md"
-    prefix.install "LICENSE"
   end
 
   test do
