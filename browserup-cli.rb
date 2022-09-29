@@ -15,7 +15,7 @@ class BrowserupCli < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "browserup"
+    bin.install "browserup.0.0.1/browserup"
   end
 
   test do
