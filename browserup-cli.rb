@@ -1,7 +1,9 @@
+require 'formula'
+
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class HomebrewBrowserupCli < Formula
+class BrowserupCli < Formula
   desc "Browserup CLI Application For Load Testing"
   homepage "https://browserup.com"
   url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.0.tar.gz"
