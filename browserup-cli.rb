@@ -6,7 +6,6 @@ class BrowserupCli < Formula
   homepage "https://browserup.com"
   url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.0.tar.gz"
   sha256 "070f13fb81a1fca72bee3c6c808046b57208cd7d4faed890f500cc4cc9e23767"
-  license "GPL"
 
   # depends_on "cmake" => :build
 
