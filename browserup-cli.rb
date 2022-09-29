@@ -4,11 +4,10 @@
 class BrowserupCli < Formula
   desc "Browserup CLI Application For Load Testing"
   homepage "https://browserup.com"
+  url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.1.tar.gz"
+  sha256 "ee8a9784cea48bcfa0f1aa8ff35444c6f48a11545f8b570c38b1183afd3320f5"
 
   # depends_on "cmake" => :build
-  # bottle do
-  #  root_url "https://example.com"
-  # end
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
