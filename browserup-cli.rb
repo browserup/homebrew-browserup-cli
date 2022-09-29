@@ -4,7 +4,7 @@
 class BrowserupCli < Formula
   desc "Browserup CLI Application For Load Testing"
   homepage "https://browserup.com"
-  url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.0.tar.gz"
+  url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.1.tar.gz"
   sha256 "5c82930105f84d836bc7b3a96196d13c6edb5a336fda29e984913d5eb171c03c"
 
   # depends_on "cmake" => :build
