@@ -4,8 +4,8 @@
 class BrowserupCli < Formula
   desc "Browserup CLI Application For Load Testing"
   homepage "https://browserup.com"
-  url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "ee8a9784cea48bcfa0f1aa8ff35444c6f48a11545f8b570c38b1183afd3320f5"
+  url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "4545f2d656b8e8482976f3557928bc52b50a44bec451f4c441f7292f577e91b7"
 
   # depends_on "cmake" => :build
 
@@ -16,6 +16,8 @@ class BrowserupCli < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     bin.install "browserup"
+    bin.install Dir["lib"]
+
   end
 
   test do
