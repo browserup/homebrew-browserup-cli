@@ -4,10 +4,11 @@
 class BrowserupCli < Formula
   desc "Browserup CLI Application For Load Testing"
   homepage "https://browserup.com"
-  url "https://github.com/browserup/homebrew-browserup-cli/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "ee8a9784cea48bcfa0f1aa8ff35444c6f48a11545f8b570c38b1183afd3320f5"
 
   # depends_on "cmake" => :build
+  # bottle do
+  #  root_url "https://example.com"
+  # end
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
@@ -15,7 +16,7 @@ class BrowserupCli < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "browserup.0.0.1/browserup"
+    bin.install "browserup"
   end
 
   test do
