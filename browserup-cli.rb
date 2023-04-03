@@ -1,13 +1,28 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+# Documentation: https://docs.brew.sh/Formula-Cookbook and https://rubydoc.brew.sh/Formula
+
 class BrowserupCli < Formula
   desc "Browserup CLI Application For Load Testing"
   homepage "https://browserup.com"
-  url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.0.6/browserup.0.0.6.tar.gz"
-  sha256 "0ebc4006c303efe7e3185ba4536bee8b4267d4ba593e537dd260170631d05e08"
 
-  # depends_on "cmake" => :build
+  # https://docs.brew.sh/Formula-Cookbook#handling-different-system-configurations
+  on_macos do
+    # See https://projects.laas.fr/tina/howto-arm64-darwin.html and
+    # https://projects.laas.fr/tina/software.php
+    on_arm do
+      url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.1.0/browserup-arm64.0.1.0.tar.gz"
+      sha256 "5cb1009df91f624528eae00b73d0323d493799b0"
+    end
+
+    on_intel do
+      url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.0.6/browserup.0.0.6.tar.gz"
+      sha256 "0ebc4006c303efe7e3185ba4536bee8b4267d4ba593e537dd260170631d05e08"
+    end
+  end
+
+  on_linux do
+    url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.0.6/browserup.0.0.6.tar.gz"
+    sha256 "0ebc4006c303efe7e3185ba4536bee8b4267d4ba593e537dd260170631d05e08"
+  end
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
@@ -29,6 +44,9 @@ class BrowserupCli < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "${bin}/browserup"
+    result = system "#{bin}/browserup help"
+    assert result.include?('browserup')
   end
+
+
 end
