@@ -10,7 +10,7 @@ class BrowserupCli < Formula
     # https://projects.laas.fr/tina/software.php
     on_arm do
       url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.1.0/browserup-arm64.0.1.0.tar.gz"
-      sha256 "5cb1009df91f624528eae00b73d0323d493799b0"
+      sha256 "e7e5293f2be6bd09dceddd26e8df2ecfecad505d44557fd570af7b786af604c6"
     end
 
     on_intel do
