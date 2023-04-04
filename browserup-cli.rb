@@ -14,14 +14,14 @@ class BrowserupCli < Formula
     end
 
     on_intel do
-      url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.0.6/browserup.0.0.6.tar.gz"
-      sha256 "0ebc4006c303efe7e3185ba4536bee8b4267d4ba593e537dd260170631d05e08"
+      url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.1.0/browserup-amd64.0.1.0.tar.gz"
+      sha256 "ba2b6da4daa2f957e3b65565e8a6c02e20c93e4eb519feffc5ca665b9eb2e583"
     end
   end
 
   on_linux do
-    url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.0.6/browserup.0.0.6.tar.gz"
-    sha256 "0ebc4006c303efe7e3185ba4536bee8b4267d4ba593e537dd260170631d05e08"
+    url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.1.0/browserup-linux-amd64.0.1.0.tar.gz"
+    sha256 "a40a69cf3db38def1dd345c1ec3aa352e401f367f00c6fd0e25be40d74c05069"
   end
 
   def install

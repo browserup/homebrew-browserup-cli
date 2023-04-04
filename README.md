@@ -2,12 +2,29 @@
 
 Install instructions for the BrowserUp CLI using Homebrew.
 
-
 ```bash
-brew install --no-quarantine -vd browserup/browserup-cli/browserup-cli
+brew tap browserup/homebrew-browserup-cli
+
+brew install --no-quarantine browserup-cli
 ```
 
-Checking the SHA256 hash of the downloaded file:
 
-shasum browserup-arm64.0.1.0.tar.gz
+## Linux non-homebrew install instructions:
 
+* Download the linux binary from here:
+
+https://github.com/browserup/homebrew-browserup-cli/releases/
+
+* Unzip, move browserup to /usr/local/bin
+* chmod +x browserup
+* Add it to your PATH
+
+
+# Uninstall:
+
+```bash
+brew uninstall --force browserup-cli
+```
+```bash
+brew untap browserup/browserup-cli
+```
