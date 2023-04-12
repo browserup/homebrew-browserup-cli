@@ -21,7 +21,7 @@ class BrowserupCli < Formula
 
   on_linux do
     url "https://github.com/browserup/homebrew-browserup-cli/releases/download/0.1.0/browserup-linux-amd64.0.1.0.tar.gz"
-    sha256 "a40a69cf3db38def1dd345c1ec3aa352e401f367f00c6fd0e25be40d74c05069"
+    sha256 "6fa8b13b556d7a10dd740dfeb9167711179bacc05923b63a1324673451ace0a8"
   end
 
   def install
